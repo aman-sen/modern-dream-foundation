@@ -18,9 +18,13 @@ export function Impact() {
           <p className="mt-4 text-white/70">
             Every ring represents a promise kept — measured progress toward a better tomorrow.
           </p>
+          <p className="mt-2 text-white font-semibold tracking-wide text-lg">
+  🇮🇳 Pan India Presence
+</p>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-y-10 md:grid-cols-3 lg:grid-cols-6">
+        {/* <div className="mt-14 grid grid-cols-2 gap-y-10 md:grid-cols-3 lg:grid-cols-6"> */}
+       <div className="mt-14 grid grid-cols-2 gap-y-10 md:grid-cols-4 place-items-center">
           {impactStats.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 0.06}>
               <AnimatedCounter value={stat.value} suffix={stat.suffix} label={stat.label} ring />

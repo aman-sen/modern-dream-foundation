@@ -18,10 +18,10 @@ export const heroSlides = [
 ];
 
 export const heroStats: StatItem[] = [
-  { label: "People Helped", value: 5000, suffix: "+" },
-  { label: "Women Empowered", value: 1200, suffix: "+" },
-  { label: "Health Camps", value: 300, suffix: "+" },
-  { label: "Students Supported", value: 2000, suffix: "+" },
+  { label: "People Helped", value: 8000, suffix: "+" },
+  { label: "Women Empowered", value: 600, suffix: "+" },
+  { label: "Meals Distributed", value: 10000, suffix: "+" },
+  { label: "Students Supported", value: 1200, suffix: "+" },
 ];
 
 export const aboutFocus: string[] = [
@@ -87,12 +87,12 @@ export const workAreas: WorkArea[] = [
 ];
 
 export const impactStats: StatItem[] = [
-  { label: "Years of Service", value: 10, suffix: "+" },
-  { label: "Lives Impacted", value: 5000, suffix: "+" },
-  { label: "Health Camps", value: 300, suffix: "+" },
-  { label: "Children Educated", value: 2000, suffix: "+" },
-  { label: "Volunteers", value: 150, suffix: "+" },
-  { label: "Villages Reached", value: 50, suffix: "+" },
+  // { label: "Years of Service", value: 10, suffix: "+" },
+  { label: "Lives Impacted", value: 8000, suffix: "+" },
+  { label: "Meals Distributed", value: 10000, suffix: "+" },
+  { label: "Children Educated", value: 1200, suffix: "+" },
+  { label: "Volunteers", value: 300, suffix: "+" },
+  // { label: "Villages Reached", value: 50, suffix: "+" },
 ];
 
 export const whyChooseUs: FeatureItem[] = [

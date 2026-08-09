@@ -47,9 +47,9 @@ export function Testimonials() {
               </div>
 
               <div className="mt-5 flex items-center gap-3">
-                <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-emerald-100">
+                {/* <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-emerald-100">
                   <Image src={t.image} alt={t.name} fill className="object-cover" />
-                </div>
+                </div> */}
                 <div className="text-left">
                   <p className="font-semibold text-ink">{t.name}</p>
                   <p className="text-xs font-medium text-emerald-600">{t.role}</p>
