@@ -10,12 +10,19 @@ export function generateStaticParams() {
   return projects.map((p) => ({ id: p.id }));
 }
 
-export function generateMetadata({
+// export function generateMetadata({
+//   params,
+// }: {
+//   params: { id: string };
+// }): Metadata {
+//   const project = projects.find((p) => p.id === params.id);
+export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
-}): Metadata {
-  const project = projects.find((p) => p.id === params.id);
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const project = projects.find((p) => p.id === id);
   if (!project) return {};
   return {
     title: project.title,
@@ -23,12 +30,19 @@ export function generateMetadata({
   };
 }
 
-export default function ProjectDetailPage({
+// export default function ProjectDetailPage({
+//   params,
+// }: {
+//   params: { id: string };
+// }) {
+//   const project = projects.find((p) => p.id === params.id);
+export default async function ProjectDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const project = projects.find((p) => p.id === params.id);
+  const { id } = await params;
+  const project = projects.find((p) => p.id === id);
   if (!project) notFound();
 
   return (
