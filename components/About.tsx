@@ -36,20 +36,15 @@ export function About() {
         </Reveal>
 
         <Reveal direction="right" className="relative">
-          <div className="relative aspect-square w-full max-w-md mx-auto overflow-hidden rounded-xl3 shadow-lift">
-            <Image
-              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop"
-              alt="Volunteers from Modern Dream Foundation working with a community"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-white p-5 shadow-lift md:block">
-            <p className="font-display text-3xl font-bold text-grad">10+</p>
-            <p className="text-xs font-medium text-ink-soft">Years of dedicated service</p>
-          </div>
-          <div className="absolute -top-6 -right-4 hidden h-24 w-24 rounded-full bg-sunrise-100 animate-float md:block" aria-hidden />
-        </Reveal>
+  <div className="relative aspect-square w-full max-w-md mx-auto overflow-hidden rounded-xl3 shadow-lift">
+    <Image
+      src="/about-photo.jpg"
+      alt="Modern Dream Foundation community work"
+      fill
+      className="object-cover"
+    />
+  </div>
+</Reveal>
       </div>
     </section>
   );

@@ -6,15 +6,16 @@ export const navLinks: NavLink[] = [
   { label: "Vision & Mission", href: "/vision-mission" },
   { label: "Impact", href: "/#impact" },
   { label: "Our Work", href: "/#our-work" },
+  { label: "Projects", href: "/projects" },
   { label: "Gallery", href: "/gallery" },
   { label: "Volunteer", href: "/volunteer" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const heroSlides = [
-  "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1920&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1920&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1920&auto=format&fit=crop",
+  "/hero-1.jpg",
+  "/hero-2.jpg",
+  "/hero-3.jpg",
 ];
 
 export const heroStats: StatItem[] = [
