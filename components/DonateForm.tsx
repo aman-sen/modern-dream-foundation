@@ -106,7 +106,8 @@ export function DonateForm() {
           <input required placeholder="Full Name" className={inputClass} />
           <input required type="email" placeholder="Email Address" className={inputClass} />
         </div>
-        <input required type="tel" placeholder="Phone Number" className={inputClass} />
+        {/* <input required type="tel" placeholder="Phone Number" className={inputClass} /> */}
+       <input required type="tel" placeholder="Phone Number" pattern="[0-9]{10}" maxLength={10} inputMode="numeric" onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()} className={inputClass} />
         <textarea rows={3} placeholder="Message (optional)" className={inputClass} />
 
         <Button type="submit" variant="accent" size="lg" className="mt-1">

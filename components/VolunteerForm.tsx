@@ -51,7 +51,8 @@ export function VolunteerForm() {
         <input required type="email" placeholder="Email Address" className={inputClass} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <input required type="tel" placeholder="Phone Number" className={inputClass} />
+        {/* <input required type="tel" placeholder="Phone Number" className={inputClass} /> */}
+        <input required type="tel" placeholder="Phone Number" pattern="[0-9]{10}" maxLength={10} inputMode="numeric" onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()} className={inputClass} />
         <input required placeholder="City" className={inputClass} />
       </div>
       <input placeholder="Skills (e.g. teaching, medical, design)" className={inputClass} />

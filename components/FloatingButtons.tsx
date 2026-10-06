@@ -117,7 +117,8 @@ function QuickContactForm({ onClose }: { onClose: () => void }) {
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
             <input required placeholder="Full Name" className={inputClass} />
             <input required type="email" placeholder="Email Address" className={inputClass} />
-            <input required type="tel" placeholder="Phone Number" className={inputClass} />
+            {/* <input required type="tel" placeholder="Phone Number" className={inputClass} /> */}
+            <input required type="tel" placeholder="Phone Number" pattern="[0-9]{10}" maxLength={10} inputMode="numeric" onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()} className={inputClass} />
             <textarea
               required
               rows={3}

@@ -66,7 +66,7 @@ export default function ContactPage() {
               </li>
             </ul>
 
-            <div className="mt-8 overflow-hidden rounded-xl2 shadow-soft">
+            {/* <div className="mt-8 overflow-hidden rounded-xl2 shadow-soft">
               <iframe
                 title="Modern Dream Foundation location"
                 src="https://www.google.com/maps?q=Rithala,Delhi,110085&output=embed"
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 loading="lazy"
                 className="border-0"
               />
-            </div>
+            </div> */}
           </Reveal>
 
           <Reveal direction="right">

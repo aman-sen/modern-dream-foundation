@@ -92,7 +92,7 @@ export const impactStats: StatItem[] = [
   { label: "Lives Impacted", value: 8000, suffix: "+" },
   { label: "Meals Distributed", value: 10000, suffix: "+" },
   { label: "Children Educated", value: 1200, suffix: "+" },
-  { label: "Volunteers", value: 300, suffix: "+" },
+  { label: "Volunteers", value: 150, suffix: "+" },
   // { label: "Villages Reached", value: 50, suffix: "+" },
 ];
 
